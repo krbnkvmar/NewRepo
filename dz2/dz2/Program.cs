@@ -19,7 +19,7 @@ namespace dz2
             Console.WriteLine("Введите второй прилежащий угол в градусах");
             var ugolvgrad2 = double.Parse(Console.ReadLine());
 
-            var area = Math.Abs(a * a ) * (Math.Sin(ugolvgrad1 * Math.PI / 180)* Math.Sin(ugolvgrad2 * Math.PI / 180)/ Math.Sin((ugolvgrad1+ ugolvgrad2) * Math.PI / 180));
+            var area = Math.Abs(a * a ) * (Math.Sin(ugolvgrad1 * Math.PI / 180)* Math.Sin(ugolvgrad2 * Math.PI / 180)/ (2*Math.Sin((ugolvgrad1+ ugolvgrad2) * Math.PI / 180)));
 
             var perimetr = Math.Abs(a) + Math.Sin(ugolvgrad1 * Math.PI / 180) * Math.Abs(a) / Math.Sin((180 - ugolvgrad1 - ugolvgrad2) * Math.PI / 180) + Math.Sin(ugolvgrad2 * Math.PI / 180) * Math.Abs(a) / Math.Sin((180 - ugolvgrad1 - ugolvgrad2) * Math.PI / 180);
 

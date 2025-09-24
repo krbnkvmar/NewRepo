@@ -12,9 +12,12 @@ namespace dz1
         {
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("Михаил Лермонтов");
+
             Console.ForegroundColor = ConsoleColor.Magenta;
             Console.WriteLine("Бородино");
+
             Console.WriteLine();
+
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.WriteLine("— Скажи-ка, дядя, ведь не даром");
             Console.WriteLine("Москва, спаленная пожаром,");
@@ -23,8 +26,8 @@ namespace dz1
             Console.WriteLine("Да, говорят, еще какие!");
             Console.WriteLine("Недаром помнит вся Россия");
             Console.WriteLine("Про день Бородина!");
-            Console.ResetColor();
 
+            Console.ResetColor();
         }
     }
 }

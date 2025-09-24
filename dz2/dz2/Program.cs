@@ -21,11 +21,11 @@ namespace dz2
 
             var area = Math.Abs(a * a ) * (Math.Sin(ugolvgrad1 * Math.PI / 180)* Math.Sin(ugolvgrad2 * Math.PI / 180)/ Math.Sin((ugolvgrad1+ ugolvgrad2) * Math.PI / 180));
 
-            var perimetr = Math.Abs(a * a - a * a) * Math.Tan(ugolvgrad1 * Math.PI / 180) / 4;
+            var perimetr = Math.Abs(a) + Math.Sin(ugolvgrad1 * Math.PI / 180) * Math.Abs(a) / Math.Sin((180 - ugolvgrad1 - ugolvgrad2) * Math.PI / 180) + Math.Sin(ugolvgrad2 * Math.PI / 180) * Math.Abs(a) / Math.Sin((180 - ugolvgrad1 - ugolvgrad2) * Math.PI / 180);
 
-            Console.WriteLine("площадь и периметр равна " + area);
+            Console.WriteLine("Площадь равна " + area);
 
-            Console.WriteLine("площадь и периметр равна" + perimetr);
+            Console.WriteLine("Периметр равен " + perimetr);
         }
     }
 }

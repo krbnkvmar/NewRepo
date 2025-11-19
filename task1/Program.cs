@@ -10,10 +10,11 @@ namespace task1
     {
         static void Main(string[] args)
         {
+            int a, b;
             Console.WriteLine("Введите натуральное число a");
-            var a = int.Parse(Console.ReadLine());
+            int.TryParse(Console.ReadLine(), out a);
             Console.WriteLine("Введите натуральное число b больше введеного числа а");
-            var b = int.Parse(Console.ReadLine());
+            int.TryParse(Console.ReadLine(), out b);
             long sum = 0;
             if (b > a)
                 {

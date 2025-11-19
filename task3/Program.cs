@@ -1,0 +1,28 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace task3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double ex = 1;
+            double num;
+            string input;
+
+            while (true) {
+                Console.WriteLine("enter number (or zero to stop)");
+                input = Console.ReadLine();
+                double.TryParse( input, out num );
+
+                if ( num == 0 ) break;
+                Console.WriteLine($"Произведение:{num * ex}");
+                ex = num;
+            }
+        }
+    }
+}

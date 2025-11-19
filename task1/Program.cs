@@ -22,7 +22,7 @@ namespace task1
                     {
                         sum += (long)(a+i) *(a+ i);
                     }
-                 Console.WriteLine($"Сумма квадратов целых чисел от a до b: {sum}");
+                 Console.WriteLine($"Сумма квадратов всех целых чисел от a до b: {sum}");
                 }
              else
                 Console.WriteLine("Введите правильные значения");

@@ -15,13 +15,13 @@ namespace task3
             string input;
 
             while (true) {
-                Console.WriteLine("enter number (or zero to stop)");
+                Console.WriteLine("Введите действительное число а (или 0 для завершения программы)");
                 input = Console.ReadLine();
                 double.TryParse( input, out num );
 
                 if ( num == 0 ) break;
                 Console.WriteLine($"Произведение:{num * ex}");
-                ex = num;
+                ex = num*ex;
             }
         }
     }

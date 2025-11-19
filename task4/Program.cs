@@ -22,7 +22,7 @@ namespace task4
                 binary = ost + binary;
                 num = num / 2;
             }
-            Console.WriteLine($"Количество единиц в числе: {count}");
+            Console.WriteLine($"Количество единиц в двоичной записи числа: {count}");
         }
     }
 }

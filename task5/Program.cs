@@ -11,9 +11,9 @@ namespace task5
         static void Main(string[] args)
         {
             int m, n;
-            Console.WriteLine("enter m");
+            Console.WriteLine("Введите числитель дроби m");
             int.TryParse(Console.ReadLine(), out m);
-            Console.WriteLine("enter n");
+            Console.WriteLine("Введите знаменатель дроби n, не равный 0");
             int.TryParse((string)Console.ReadLine(), out n);
             int a = m, b = n;
             while (b != 0)

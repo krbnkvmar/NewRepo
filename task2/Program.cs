@@ -29,7 +29,7 @@ namespace task2
                     ex = a;
                 }
             }
-            Console.WriteLine($"Наименьшая сумма из введеных: {sum}");
+            Console.WriteLine($"Наименьшая значение по условию: {sum}");
         }
     }
 }

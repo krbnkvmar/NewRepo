@@ -21,7 +21,7 @@ namespace task6
                 }
                 sum += num;
             }
-            Console.WriteLine($"Вычисление квадратов равно { sum}");
+            Console.WriteLine($"Результат программы равен { sum}");
         }
     }
 }
